@@ -419,6 +419,122 @@
         text-align: center;
       }
     }
+    /* -------------------- RESPONSIVE DESIGN -------------------- */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+
+  nav {
+    padding: 15px 40px;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .hero img {
+    width: 180px;
+    height: 180px;
+  }
+
+  #typed-text {
+    font-size: 32px;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile landscape + small phones (max-width: 768px) */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 15px 25px;
+  }
+
+  nav ul {
+    display: none; /* Optional: Hide menu (mobile style) */
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .hero {
+    padding: 0 10px;
+  }
+
+  .hero img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #typed-text {
+    font-size: 28px;
+  }
+
+  .fade-in-subtext {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .skill-item {
+    padding: 15px 25px;
+  }
+
+  .about img {
+    width: 100%;
+  }
+}
+
+/* Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+
+  nav {
+    padding: 12px 20px;
+  }
+
+  .hero img {
+    width: 130px;
+    height: 130px;
+  }
+
+  #typed-text {
+    font-size: 24px;
+  }
+
+  .hero button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .about-text h2,
+  .skills h2,
+  .projects h2 {
+    font-size: 22px;
+  }
+
+  .skill-item {
+    width: 100%;
+  }
+
+  .project {
+    padding: 15px;
+  }
+
+  .contact-right {
+    padding: 25px;
+  }
+}
   </style>
 </head>
 
